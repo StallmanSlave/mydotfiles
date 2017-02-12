@@ -1,0 +1,49 @@
+Xsession: X session started for joseph at Sun Feb 12 15:47:56 EST 2017
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting XAUTHORITY=/home/joseph/.Xauthority
+localuser:joseph being added to access control list
+dbus-update-activation-environment: setting GTK_MODULES=gail:atk-bridge
+gpgconf: warning: can not open config file /home/joseph/.gnupg/gpg-agent.conf: No such file or directory
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1
+dbus-update-activation-environment: setting QT_LINUX_ACCESSIBILITY_ALWAYS_ON=1
+OpenGL version: 3.
+dbus-update-activation-environment: setting USER=joseph
+dbus-update-activation-environment: setting XDG_SESSION_TYPE=x11
+dbus-update-activation-environment: setting HOME=/home/joseph
+dbus-update-activation-environment: setting DESKTOP_SESSION=i3
+dbus-update-activation-environment: setting QT_STYLE_OVERRIDE=GTK+
+dbus-update-activation-environment: setting XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+dbus-update-activation-environment: setting GTK_MODULES=gail:atk-bridge
+dbus-update-activation-environment: setting QT_LINUX_ACCESSIBILITY_ALWAYS_ON=1
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+dbus-update-activation-environment: setting LOGNAME=joseph
+dbus-update-activation-environment: setting PATH=/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+dbus-update-activation-environment: setting GDM_LANG=en_US.utf8
+dbus-update-activation-environment: setting XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+dbus-update-activation-environment: setting XDG_RUNTIME_DIR=/run/user/1000
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting LANG=en_US.UTF-8
+dbus-update-activation-environment: setting XDG_CURRENT_DESKTOP=i3
+dbus-update-activation-environment: setting XDG_SESSION_DESKTOP=i3
+dbus-update-activation-environment: setting XAUTHORITY=/home/joseph/.Xauthority
+dbus-update-activation-environment: setting XDG_GREETER_DATA_DIR=/var/lib/lightdm/data/joseph
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting GDMSESSION=i3
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/home/joseph
+warning: output DVI-I-1 not found; ignoring
+warning: output DVI-I-0 not found; ignoring
+warning: output DVI-I-3 not found; ignoring
+warning: output DVI-I-2 not found; ignoring
+feh WARNING: /home/joseph/wallpaper/miku.jpg does not exist - skipping
+feh: No loadable images specified.
+See 'man feh' for detailed usage information
+ERROR block_reap:328: [bandwidth] bad exit code 1
+Failed to connect to session manager: Failed to connect to the session manager: SESSION_MANAGER environment variable not defined
+restack_win(0x01000003, 0x01000022): Failed to found new above window.
+1486932601015	addons.productaddons	ERROR	Request failed certificate checks: [Exception... "SSL is required and URI scheme is not https."  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: resource://gre/modules/CertUtils.jsm :: checkCert :: line 145"  data: no]
+Failed to connect to session manager: Failed to connect to the session manager: SESSION_MANAGER environment variable not defined
+
+(xfce4-terminal:6857): Gdk-CRITICAL **: gdk_window_get_window_type: assertion 'GDK_IS_WINDOW (window)' failed

@@ -1,0 +1,1 @@
+{"download_over_tor": false, "force_en-US": false, "modem_sound": false, "tor_socks_address": "tcp:127.0.0.1:9050", "latest_version": "6.5", "installed": false, "installed_version": "6.0.8", "check_for_updates": false, "mirror": "https://dist.torproject.org/", "tbl_version": "0.2.6", "update_over_tor": true, "last_update_check_timestamp": 1486219739}
