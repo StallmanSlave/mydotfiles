@@ -1,0 +1,939 @@
+body{
+	background-color:#f2f2f2;
+}
+
+#body {
+		max-width: 1200px;
+		margin: 35px auto 5px auto;
+		 margin: 2% auto 2% auto;
+}
+
+
+#body a{
+	display:block;
+}
+	
+
+
+#lightGreen{
+	background-color: #6c956d;
+	width: 100%;
+	padding: 12px 0;
+	
+}
+
+#lightGreen #content{
+	max-width: 1200px;
+	margin: 0 auto;
+	font: 400 0.875em/1.125em "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+	color:#ffffff;
+	
+}
+		
+#lightGreen #content .welcome{
+	font-size: 15px;
+	line-height: 14px;
+	margin:0px;
+}
+
+#lightGreen #content p{
+	font-size: 0.8125em;
+}
+
+
+#lightGreen #content #tools{
+	float: right;
+	margin: 7px 0 0 0;
+}
+
+#lightGreen #content #tools img{
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+#lightGreen #content #tools .password{
+	float: left;
+	margin: 0 30px 0 0;
+	border-right: 1px solid #ffffff;
+	padding: 0 25px 0 0;
+}
+
+#lightGreen #content #tools a{
+	font-size: 13px;
+	text-decoration:none;
+	color: #ffffff;
+}
+
+#lightGreen #content #tools a:hover{
+	text-decoration:underline;
+}
+
+
+#darkGreen{
+	background-color: #1C402B;
+	width: 100%;
+	padding: 20px 0;
+	margin: 5px 0 0 0;
+	display:block;
+overflow:auto;
+}
+
+#darkGreen #content{
+	max-width: 1200px;
+	margin: 0 auto;
+	font: 400 0.875em/1.125em "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+	color:#ffffff;
+	
+}
+
+
+#darkGreen #content #logo{
+	display: block;
+  text-indent: -9999px;
+  width: 283px;
+  height: 63px;
+ background:url(https://my.csmd.edu/images/myCSMD.svg);
+  background-size: 283px 63px;
+	float: left;
+}
+
+#darkGreen #content #logoMiddle{
+	display:none;
+}
+
+#darkGreen #content #navigation{
+	float: right;
+	margin: 20px 0 0 0;
+	font-size:1.1em;
+}
+
+
+#darkGreen #content #navigation a{
+	color:#ffffff;
+	margin: 0 30px 0 0;
+	text-decoration:none;
+
+}
+
+#darkGreen #content #navigation a:hover{
+	text-decoration:underline;
+
+}
+
+#darkGreen #content #navigation a.last{
+	margin: 0;
+
+}
+
+
+#purpleBar{
+	background-color:#6a749c;
+	width: 100%;
+	padding: 5px 0;
+	margin: 0 0 10px 0;
+}
+
+#blueBar{
+	background-color:#496a4b;
+	width: 100%;
+	padding: 5px 0;
+	margin: 0 0 10px 0;
+}
+
+#pinkBar{
+	background-color:#c5586b;
+	width: 100%;
+	padding: 5px 0;
+	margin: 0 0 10px 0;
+}
+
+#orangeBar{
+	background-color:#b69942;
+	width: 100%;
+	padding: 5px 0;
+	margin: 0 0 10px 0;
+}
+
+
+#tealBar{
+	background-color:#749c9a;
+	width: 100%;
+	padding: 5px 0;
+	margin: 10px 0 10px 0;
+}
+
+
+#secondaryContent{
+	max-width: 1200px;
+	margin: 0 auto;
+	font: 400 0.875em/1.125em "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+	box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+	padding: 0 0 10px 0;
+}
+
+.paddedContent li{
+	padding-left: 20px;
+    margin: 5px 0px 10px 0px;
+    background: url(https://my.csmd.edu/images/small-black-chevron-white.png) no-repeat 2px .4em;
+	font: 13px/20px  "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif
+}
+
+
+ .padded {
+	background: #ccc;
+	background: rgba(204, 204, 204, 0.5);
+	padding: 20px;
+	color:#333333;
+	height: 510px;
+	
+}
+
+#secondaryContent .paddedQuickLinks {
+	background: #ccc;
+	background: rgba(204, 204, 204, 0.5);
+	padding: 20px;
+	color:#333333;
+	height: 510px;
+	
+}
+
+
+ #secondaryContent .paddedHalf {
+	background: #ccc;
+	background: rgba(204, 204, 204, 0.5);
+	padding: 20px;
+	color:#333333;
+	height: 220px;
+}
+
+
+.paddedLogin {
+	background: #ccc;
+	background: rgba(204, 204, 204, 0.5);
+	padding: 20px;
+	color:#333333;
+	min-height: 393px;
+	box-sizing: border-box;
+	text-align:left;
+}
+
+.paddedLoginHelp {
+	background: #ccc;
+	background: rgba(204, 204, 204, 0.5);
+	padding: 20px;
+	color:#333333;
+	height: auto;
+	box-sizing: border-box;
+}
+
+
+.paddedLogin p {
+	line-height: 1.23em;
+	font-size:1em;
+	margin:15px 0;
+	text-align:left;
+}
+
+.paddedLogin a{
+	color: #1C402B;
+	text-decoration:underline;
+}
+
+
+.paddedLoginHelp p {
+	line-height: 1.4em;
+	font-size:1em;
+	margin:15px 0;
+	text-align:left;
+}
+
+.paddedLoginHelp a{
+	color: #1C402B;
+	text-decoration:underline;
+}
+
+
+input{
+	width:95% !important;
+	padding: 5px;
+	font: 400 0.875em/1.125em "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+	margin: 10px 0 0 0;
+	display:block;
+}
+
+
+.loginbutton{
+	background-color: #1c402b;
+	padding: 0px;
+	font: 400 0.875em/1.125em "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+	color:#ffffff;
+	width: 40% !important;
+	height:auto !important;
+	border:0px;
+	line-height: 16px;
+	display:block;
+	cursor:pointer;
+}
+	
+
+p.help{
+	color: #1c402b;
+	margin-top: 30px;
+	line-height:1.4em;
+	
+}
+
+p.green{
+	color: #1c402b;
+	
+	
+}
+
+.inline{
+	display:inline !important;
+}
+
+
+
+#secondaryContent  h1{
+	font-size: 1.3em;
+	padding: 0 0 20px 0;
+	border-bottom: solid 1px #bbbbbb;
+}
+
+
+
+
+
+#secondaryContent .paddedContent{
+	margin: 20px 0 0 0;
+	text-align:left;
+	
+}
+
+
+
+#secondaryContent .paddedContent .announcementTitle, #secondaryContent .paddedContent .announcementTitle a{
+	font-size:15px;
+	color: #1C402B;
+	margin: 0 0 10px 0;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+#secondaryContent .paddedContent .announcementTitle a 
+
+{text-decoration:underline;}
+
+
+#secondaryContent .paddedContent ul li{
+	padding-left: 20px;
+    margin: 5px 0px 10px 0px;
+    background: url(https://my.csmd.edu/images/small-black-chevron-white.png) no-repeat 2px .4em;
+	font: 13px/20px  "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif
+}
+
+
+#secondaryContent  .paddedContent ul li a{
+	color: #1C402B;
+	font: 500 15px/18px "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+	text-decoration:none;
+}
+#secondaryContent   .announcements ul li a {
+	font: 13px/20px "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+	text-decoration:underline;
+}
+
+#secondaryContent  .paddedContent ul li a:hover{
+	text-decoration:underline;
+}
+
+
+#footerDarkGreen{
+	background-color: #274e37;
+	width: 100%;
+	padding: 20px 0;
+}
+
+#footerDarkGreen #content{
+	max-width: 1200px;
+	margin: 0 auto;
+	font: 400 0.875em/1.125em "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+	color:#ffffff;
+	text-align:center;
+	/*padding:0 0 0 150px;*/
+}
+
+
+#footerDarkGreen #content a{
+    font: .85em/2em "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    color: white;
+	margin: 0 30px 0 0;
+	text-decoration:none;
+}
+
+#footer{
+	width: 60%;
+	margin: 0 auto;
+ 	font: 0.875em/1.125em "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+	color:#1b3626;
+	padding: 20px 0;
+
+}
+
+#footer .askMe{
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+#footer .askMeText{
+	padding: 0px 0;
+	
+}
+
+#footer .askMeText a{
+	color:#1b3626;
+	text-decoration:none;
+	display:block; 
+	float:left; 
+	margin-right:10px;
+}
+
+#footer .askMeText a:hover{
+	text-decoration:underline;
+}
+
+.bold{
+	font-weight:bold;
+}
+
+.italicTimes{
+	font-style:italic;
+	font-family:Times, "Times New Roman", Cambria, "Hoefler Text", "Liberation Serif", serif;
+}
+
+.italicCentury{
+	font-style:italic;
+	font-family:"Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+	font-size:.7em;
+}
+
+
+#footer #footer-social {
+		margin-bottom: 10px;
+	}
+	
+	#footer #footer-social ul {
+		display: block;
+		height: 37px;
+		margin: 10px 0;
+		position: relative;
+		max-width: 350px;
+	} 
+	#footer #footer-social ul li {
+		display: block;
+		float: left;
+		width: 37px;
+		height: 37px;
+		margin:0;
+		margin-right: 4px;
+	}
+	#footer #footer-social ul li.facebook {}
+	#footer #footer-social ul li.twitter {}
+	#footer #footer-social ul li.linkedin {}
+	#footer #footer-social ul li.google-plus {}
+	#footer #footer-social ul li.flickr {}
+	#footer #footer-social ul li.foursquare {}
+	#footer #footer-social ul li.instagram {}
+	#footer #footer-social ul li a {
+		display: block;
+		float: left;
+		width: 37px;
+		height: 37px;
+		background-image: url(https://my.csmd.edu/images/footer-social-diamonds.png);
+		background-repeat: no-repeat;
+		background-size: 259px 37px;
+		text-indent: -10000px;
+	}
+	#footer #footer-social .facebook {}
+	#footer #footer-social .twitter{
+		background-position: -37px 0px;
+	}
+	#footer #footer-social .linkedin {
+		background-position: -74px 0px;
+	}
+
+	 #footer #footer-social .instagram {
+		background-position: -222px 0px;
+	}
+	#footer #footer-social ul li a:hover {}
+	#footer #footer-social p {
+		clear: both;
+		font:  0.75em/1.125em "Times New Roman", times, serif;
+		color: #cccccc;
+		margin-top: 20px;
+		text-align: center;
+		font-style: italic;
+	}
+	#footer #footer-social img {
+		margin-right:10px;
+	}
+	
+	
+	
+	#footer .copyright{
+		font: 400  0.75em/1.125em "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+		font-style:italic;
+		margin: 10px 0;
+	}
+	
+	
+	#footer .connect{
+	padding: 0;
+	font-size:13px;
+	
+}
+
+#footer .connect a{
+	color:#1b3626;
+	text-decoration:none;
+	display:block; 
+	float:left; 
+	margin-right:10px;
+}
+
+#footer .connect a:hover{
+	text-decoration:underline;
+}
+
+
+
+.show{
+	display:none;
+}
+
+
+
+.showLogo{
+	display:none;
+
+}
+
+#cssmenu{
+	display:none !important;
+}
+
+.login{
+	font: 400  1.25em/1.125em "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+	padding: 0 0 20px 0;
+	font-weight:bold;
+	color:#464646;	
+}
+
+h2{
+	font: 400  1em/1.125em "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+	padding: 0 0 20px 0;
+	font-weight:bold;
+	color:#464646;	
+}
+
+
+
+.greenButton{
+	background-color: #6c956d;
+	padding: 5px 20px;
+	font: 400 0.875em/1.125em "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+	color:#ffffff;
+	width: 100px;
+	border:0px;
+	margin: 0px 0px 0px 20px !important;
+}
+
+
+.greenButtonLogin{
+	background-color: #6c956d;
+	padding: 15px 20px;
+	font: 400 0.875em/1.125em "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+	color:#ffffff;
+	width: 90%;
+	border:0px;
+	margin: 0px !important;
+	text-align: center;
+}
+
+/* event styles */
+
+
+  .evtList {
+    display: block;
+		float: left;	
+		width: 100%;
+		color: #444;
+		margin-bottom: 30px;
+clear:both;
+}
+
+.evtList > .evtLeft{
+ 
+display: block;
+		float: left;
+		width: 15%;
+		text-align: left;
+		padding-right: 3%;
+}
+
+.evtList > .evtRight{
+display: block;
+		float: left;
+		width: 80%;
+		border-left: 1px solid #bbb;
+}
+
+.evtDate>span {
+  font: 12px/12px "Times New Roman", times, serif;
+		font-style: italic;
+		text-transform: uppercase;
+display: block;
+		width: 100%;
+		text-align: center;
+}
+.evtList .evtDay{
+font: 28px/12px "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+text-align:center;
+}
+
+.evtList .evtTime{
+font: 16px/18px "Times New Roman", times, serif;
+		margin-left: 10px;
+		font-style: italic;
+margin-top:10px;
+}
+.evtTitle {
+font: 14px/22px "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+		margin-left: 10px;
+font-weight:normal;
+}
+.evtTitle a {
+color:#1C402B;
+}
+.evtList,
+#content #secondary p {
+  font-weight: bold;
+}
+p a.more {
+color:#1C402B;
+}
+div.studentviewdiv {
+background-color:#DFDFDF;
+padding:10px 0px;
+text-align:center;
+}
+a.studentview {
+text-align:center;
+color:#274E37;
+text-decoration:none;
+font: 14px/22px "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+margin:0px auto;
+}
+/* ---------------- EMERGENCY PAGE STYLES START ---------------- */
+#emergencyInfo {
+		clear:both;
+			text-decoration: none;
+		z-index:1000;
+		position:relative;
+		display:block;
+		min-width:100%;
+	}
+#emergencyInfo:hover {
+	text-decoration: underline;
+	color: #c61d1d;
+	cursor:pointer;
+}
+	.SmartBoard_Table {
+		width:100%;
+		height:45px;
+	}
+	.SmartBoard_Table .SmartBoard_Row {
+		width:100%;
+		background-color:#FFD200;
+	}
+	.SmartBoard_Message {
+		width:100%;
+		padding:10px;
+		position:relative;
+		font-size:1em;
+		text-align:center;
+		margin:0px auto;
+	}	
+.SmartBoard_Subject, .SmartBoard_DateTime {
+	display:none;
+}
+
+.SmartBoard_Message:hover {
+	text-decoration: underline;
+}
+.SmartBoard_Message:before {
+	content: url('http://csmd-percussion.s3-website-us-east-1.amazonaws.com/Assets/Template/warning-icon.png');
+	position:relative;
+	top:5px; right: 5px;
+}
+.SmartBoard_Message:after {
+	content: url('http://csmd-percussion.s3-website-us-east-1.amazonaws.com/Assets/Template/warning-icon.png');
+	position:relative;
+	top:5px; left: 5px;
+}
+/* ---------------- EMERGENCY PAGE STYLES END ---------------- */
+
+
+@media only screen and (max-width: 1250px) {
+
+#lightGreen #content{
+	padding: 0 2% 0 2%;
+}
+
+
+#darkGreen #content{
+	padding: 0 2% 0 2%;
+}
+
+
+
+#lightGreen #content .welcome{
+	font-size: 1em;
+	margin:5px 0;
+}
+
+#lightGreen #content{
+	padding-bottom:10px;
+	
+}
+
+
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+
+.login{
+	padding: 20px 0 20px 20px;
+}
+
+
+
+#lightGreen #content{
+	padding: 0 2% 0 2%;
+}
+
+#darkGreen #content{
+	padding: 0 2% 0 2%;
+}
+
+#secondaryContent .paddedContent .announcementTitle{
+	line-height: 1.25em;
+	
+}
+
+.hide{
+	display:none;
+}
+
+
+
+#footer{
+	width: 90%;
+	margin: 20px 0 0 20px;
+}
+
+
+#body {
+		
+		 margin: 1% auto  1% auto;
+}
+
+
+.showLogo{
+	display:block;
+
+}
+
+#footer{
+	
+ 	font: 0.775em/1.125em "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+	
+
+}
+
+
+#lightGreen #content .welcome{
+	font-size: 1em;
+	margin:5px 0;
+}
+
+
+#secondaryContent .paddedQuickLinks {
+	height: auto;
+	
+}
+
+
+}
+@media only screen and (max-width: 768px) {
+	
+	#darkGreen #content #navigation{
+	display:none;
+}
+
+#lightGreen #content #tools{
+	display:none;
+}
+
+
+#secondaryContent .paddedQuickLinks {
+	height: auto;
+	
+}
+
+#darkGreen #content #logo{
+display:none;
+  
+}
+
+#darkGreen #content #logoMiddle{
+	display: block;
+  	width: 40%;
+margin: 0 auto;
+  
+}
+	
+	
+#cssmenu{
+	display:block !important;
+}
+
+	#darkGreen #content #logoMiddle {
+  	width: 40% !important;
+
+  
+}
+
+
+input{
+	width:50%;
+	padding: 10px;
+	font: 400 0.875em/1.125em "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+	margin: 10px 0 0 0;
+	
+}
+
+.loginbutton{
+	padding: 15px;
+	-webkit-appearance: none;
+}
+	
+.hideBar{
+	display:block;
+}
+
+
+#lightGreen #content .welcome{
+	font-size: 1em;
+	margin:5px 0;
+}
+
+#lightGreen #content{
+	margin-top: -45px;
+	padding-bottom:10px;
+	
+}
+
+
+
+
+}
+
+@media only screen and (max-width: 767px) {
+	#darkGreen #content #logoMiddle {
+  	width: 60% !important;
+	padding-right: 25px;
+
+  
+}
+
+
+#darkGreen{
+
+	padding: 10px 0;
+
+}
+
+
+.show{
+	display:block;
+
+}
+
+.hide{
+	display:none;
+}
+
+.hideBar{
+	display:block;
+	margin-bottom:5px;
+}
+
+#secondaryContent .padded {
+	height: auto;
+	
+}
+
+#footerDarkGreen #content{
+
+	text-align:left;
+}
+
+.paddedLogin {
+	background: none !important;
+	
+}
+
+
+input{
+	width:92%;
+	padding: 10px;
+	font: 400 0.875em/1.125em "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+	margin: 10px 0 0 0;
+}
+
+.loginbutton{
+	padding: 15px 20px;
+	-webkit-appearance: none;
+	
+}
+
+#lightGreen #content .welcome{
+	font-size: 1em;
+	margin:5px 0;
+}
+
+#lightGreen #content{
+	margin-top: -45px;
+	padding-bottom:10px;
+	
+}
+
+
+}
+
+
+ê)¯{ñ¯      X iX i=n‰žX¬<4   #    :https://my.csmd.edu/css/global.css necko:classified 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Last-Modified: Fri, 11 Nov 2016 13:59:54 GMT
+Accept-Ranges: bytes
+Date: Sun, 12 Feb 2017 06:42:01 GMT
+Server: Apache
+Etag: "3c39-54106e78dea80"
+Content-Type: text/css
+Via: 1.1 my.csmd.edu (Access Gateway 3.1.4-27-ABA4443D4A9E3983-75447), 1.1 AN-0003011046054166
+Content-Length: 15417
+ uncompressed-len 0   <9

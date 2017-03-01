@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="shortcut icon" href="/public/images/favicon.ico">
+    
+    <link rel="stylesheet" href="/public/css/screen.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="/public/css/colorbox.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="/public/css/tipsy.css" type="text/css" media="screen">
+    
+    <script src="/public/js/jquery.min.js" type="text/javascript"></script>
+    <script src="/public/js/jquery.ui.min.js" type="text/javascript"></script>
+    <script src="/public/js/jquery.colorbox.min.js" type="text/javascript"></script>
+    <script src="/public/js/jquery.tipsy.js" type="text/javascript"></script>
+    <script src="/public/js/ds.js" type="text/javascript"></script>
+    
+    
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-24042959-1']);
+            _gaq.push(['_trackPageview']);
+            
+            (function() {
+              var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+              ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    
+    
+    <title>DotShare.it</title>
+</head>
+
+<body>
+
+<div id="header">
+    <div id="nav">
+        <ul class="label">
+            <li><span class="orange">.</span>share</li>
+        </ul>
+        
+        <ul>
+            <li>guest<span class="gray">@</span>dotshare <span class="gray">[</span>~<span class="gray">]</span> <span class="gray">$</span> ls -a nav/</li>
+            
+            <li><a href="/">..</a></li>
+            <li><a href="/news/">news</a></li>
+            <li><a href="/dots/">browse</a></li>
+            
+            
+            
+            <li><a href="/about/">about</a></li>
+            
+            
+            
+            
+                <li><a href="/login/">login</a></li>
+                <li><a href="/register/">register</a></li>
+            
+        </ul>
+    </div>
+    
+    <div id="donate">
+        <ul>
+            <li><a href="/donate/">donate</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="commands">
+    <div id="command">
+        <p>
+    <span class="dark-gray">guest</span>@<span class="dark-gray">dotshare</span> [<span class="dark-gray">~/groups/wms/i3</span>] <span class="dark-gray">$</span> ls i3-Arc-Dark---Blue/ | cat
+</p>
+    </div>
+</div>
+
+<div id="container">
+    <div id="categories">
+    <ul>
+        
+            <li class="label">
+                chat/
+                
+                <ul>
+                    
+                        <li><a href="/category/chat/irssi/">irssi</a></li>
+                    
+                        <li><a href="/category/chat/weechat/">weechat</a></li>
+                    
+                </ul>
+            </li>
+        
+            <li class="label">
+                emacs/
+                
+                <ul>
+                    
+                        <li><a href="/category/emacs/colors/">colors</a></li>
+                    
+                        <li><a href="/category/emacs/config/">config</a></li>
+                    
+                </ul>
+            </li>
+        
+            <li class="label">
+                fms/
+                
+                <ul>
+                    
+                        <li><a href="/category/fms/mc/">mc</a></li>
+                    
+                        <li><a href="/category/fms/ranger/">ranger</a></li>
+                    
+                </ul>
+            </li>
+        
+            <li class="label">
+                info/
+                
+                <ul>
+                    
+                        <li><a href="/category/info/conky/">conky</a></li>
+                    
+                        <li><a href="/category/info/dzen2/">dzen2</a></li>
+                    
+                </ul>
+            </li>
+        
+            <li class="label">
+                misc/
+                
+                <ul>
+                    
+                        <li><a href="/category/misc/misc/">misc</a></li>
+                    
+                </ul>
+            </li>
+        
+            <li class="label">
+                mpd/
+                
+                <ul>
+                    
+                        <li><a href="/category/mpd/ncmpcpp/">ncmpcpp</a></li>
+                    
+                </ul>
+            </li>
+        
+            <li class="label">
+                panels/
+                
+                <ul>
+                    
+                        <li><a href="/category/panels/bmpanel/">bmpanel</a></li>
+                    
+                        <li><a href="/category/panels/lxpanel/">lxpanel</a></li>
+                    
+                        <li><a href="/category/panels/pypanel/">pypanel</a></li>
+                    
+                        <li><a href="/category/panels/tint2/">tint2</a></li>
+                    
+                </ul>
+            </li>
+        
+            <li class="label">
+                shells/
+                
+                <ul>
+                    
+                        <li><a href="/category/shells/bash/">bash</a></li>
+                    
+                        <li><a href="/category/shells/tcsh/">tcsh</a></li>
+                    
+                        <li><a href="/category/shells/zsh/">zsh</a></li>
+                    
+                </ul>
+            </li>
+        
+            <li class="label">
+                terms/
+                
+                <ul>
+                    
+                        <li><a href="/category/terms/colors/">colors</a></li>
+                    
+                        <li><a href="/category/terms/screen/">screen</a></li>
+                    
+                        <li><a href="/category/terms/tmux/">tmux</a></li>
+                    
+                </ul>
+            </li>
+        
+            <li class="label">
+                vim/
+                
+                <ul>
+                    
+                        <li><a href="/category/vim/colors/">colors</a></li>
+                    
+                        <li><a href="/category/vim/rc/">rc</a></li>
+                    
+                </ul>
+            </li>
+        
+            <li class="label">
+                wms/
+                
+                <ul>
+                    
+                        <li><a href="/category/wms/awesome/">awesome</a></li>
+                    
+                        <li><a href="/category/wms/bspwm/">bspwm</a></li>
+                    
+                        <li><a href="/category/wms/dwm/">dwm</a></li>
+                    
+                        <li><a href="/category/wms/fluxbox/">fluxbox</a></li>
+                    
+                        <li><a href="/category/wms/fvwm/">fvwm</a></li>
+                    
+                        <li><a href="/category/wms/herbstluft/">herbstluft</a></li>
+                    
+                        <li><a href="/category/wms/i3/">i3</a></li>
+                    
+                        <li><a href="/category/wms/monster/">monster</a></li>
+                    
+                        <li><a href="/category/wms/openbox/">openbox</a></li>
+                    
+                        <li><a href="/category/wms/ratpoison/">ratpoison</a></li>
+                    
+                        <li><a href="/category/wms/spectrwm/">spectrwm</a></li>
+                    
+                        <li><a href="/category/wms/stumpwm/">stumpwm</a></li>
+                    
+                        <li><a href="/category/wms/subtle/">subtle</a></li>
+                    
+                        <li><a href="/category/wms/wmfs/">wmfs</a></li>
+                    
+                        <li><a href="/category/wms/xmonad/">xmonad</a></li>
+                    
+                </ul>
+            </li>
+        
+    </ul>
+</div>
+    
+    <div id="content">
+        
+    
+
+        
+    
+    
+        <div class="item">
+            <div class="header">
+                <h4>i3 Arc Dark - Blue</h4>
+                <h5><a href="/~ghvtrf/">ghvtrf</a> Feb 09, 2017 (wms/<a href="/category/wms/i3/">i3</a>)</h5>
+            </div>
+        </div>
+        
+        <div class="item file">
+            <div class="header">
+                <h4>shutdown.sh<span class="right">(<a href="/dots/1440/0/raw/">raw</a>, <a href="/dots/1440/0/dl/">dl</a>)</span></h4>
+            </div>
+            
+            <div class="content">
+                
+                
+                <div class="dot first">
+                    <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26</pre></div></td><td class="code"><div class="highlight"><pre><span class="c1">#!/bin/bash</span>
+
+<span class="k">xmodmap</span><span class="n"> </span><span class="nf">-e</span><span class="n"> </span><span class="s">&quot;keycode 114 = Down&quot;</span>
+<span class="k">xmodmap</span><span class="n"> </span><span class="nf">-e</span><span class="n"> </span><span class="s">&quot;keycode 113 = Up&quot;</span>
+
+<span class="k">res</span><span class="o">=$</span><span class="n">(echo </span><span class="s">&quot; ÔÄ£; ÔäΩ; ÔÅå; ÔÉ¢; ÔÄë&quot;</span><span class="n"> | rofi </span><span class="nf">-sep</span><span class="n"> </span><span class="s">&quot;;&quot;</span><span class="n"> </span><span class="nf">-dmenu</span><span class="n"> </span><span class="nf">-p</span><span class="n"> </span><span class="s">&quot;Exit?&quot;</span><span class="n"> </span><span class="nf">-lines</span><span class="n"> </span><span class="mi">1</span><span class="n"> </span><span class="nf">-columns</span><span class="n"> </span><span class="mi">5</span><span class="n"> </span><span class="nf">-separator-style</span><span class="n"> solid </span><span class="nf">-location</span><span class="n"> </span><span class="mi">0</span><span class="n"> </span><span class="nf">-width</span><span class="n"> </span><span class="mi">550</span><span class="n"> </span><span class="nf">-hide-scrollbar</span><span class="n"> </span><span class="nf">-padding</span><span class="n"> </span><span class="mi">5</span><span class="n"> </span><span class="nf">-font</span><span class="n"> </span><span class="s">&quot;Mono 50&quot;</span><span class="n"> </span><span class="nf">-scroll-method</span><span class="n"> 0)</span>
+
+<span class="k">xmodmap</span><span class="n"> </span><span class="nf">-e</span><span class="n"> </span><span class="s">&quot;keycode 114 = Right&quot;</span>
+<span class="k">xmodmap</span><span class="n"> </span><span class="nf">-e</span><span class="n"> </span><span class="s">&quot;keycode 113 = Left&quot;</span>
+
+<span class="k">if</span><span class="n"> [ </span><span class="o">$</span><span class="n">res </span><span class="o">=</span><span class="n"> </span><span class="s">&quot;ÔÄ£&quot;</span><span class="n"> ]</span><span class="o">;</span><span class="n"> then</span>
+<span class="n">    ~/lock.sh</span>
+<span class="k">fi</span>
+<span class="k">if</span><span class="n"> [ </span><span class="o">$</span><span class="n">res </span><span class="o">=</span><span class="n"> </span><span class="s">&quot;ÔäΩ&quot;</span><span class="n"> ]</span><span class="o">;</span><span class="n"> then</span>
+<span class="n">    i3-msg exit</span>
+<span class="k">fi</span>
+<span class="k">if</span><span class="n"> [ </span><span class="o">$</span><span class="n">res </span><span class="o">=</span><span class="n"> </span><span class="s">&quot;ÔÅå&quot;</span><span class="n"> ]</span><span class="o">;</span><span class="n"> then</span>
+<span class="n">    ~/lock.sh &amp;&amp; systemctl hibernate</span>
+<span class="k">fi</span>
+<span class="k">if</span><span class="n"> [ </span><span class="o">$</span><span class="n">res </span><span class="o">=</span><span class="n"> </span><span class="s">&quot;ÔÉ¢&quot;</span><span class="n"> ]</span><span class="o">;</span><span class="n"> then</span>
+<span class="n">    systemctl reboot</span>
+<span class="k">fi</span>
+<span class="k">if</span><span class="n"> [ </span><span class="o">$</span><span class="n">res </span><span class="o">=</span><span class="n"> </span><span class="s">&quot;ÔÄë&quot;</span><span class="n"> ]</span><span class="o">;</span><span class="n"> then</span>
+<span class="n">    systemctl poweroff</span>
+<span class="k">fi</span>
+<span class="k">exit</span><span class="n"> </span><span class="mi">0</span>
+</pre></div>
+</td></tr></table>
+                </div>
+                
+                <div class="overlay">
+                    <p>CLICK TO VIEW</p>
+                </div>
+                
+                <div class="minimize">
+                    <p>x</p>
+                </div>
+            </div>
+        </div>
+        
+        
+            
+            
+            <div class="multi">
+                
+                    <div class="item file">
+                        <div class="header">
+                            
+                                <h4>rofi-config<span class="right">(<a href="/dots/1440/1/raw/">raw</a>, <a href="/dots/1440/1/dl/">dl</a>)</span></h4>
+                            
+                        </div>
+                        
+                        <div class="content">
+                            <div class="dot">
+                                <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16</pre></div></td><td class="code"><div class="highlight"><pre><span class="k">!</span><span class="n"> ------------------------------------------------------------------------------</span>
+<span class="k">!</span><span class="n"> ROFI Settings</span>
+<span class="k">!</span><span class="n"> ------------------------------------------------------------------------------</span>
+<span class="k">rofi.color-enabled:</span><span class="n"> </span><span class="kp">true</span>
+<span class="k">rofi.color-window:</span><span class="n"> </span><span class="s">#3C4150</span><span class="n">, </span><span class="s">#4084D6</span><span class="n">, </span><span class="s">#4084D6</span>
+<span class="k">rofi.color-normal:</span><span class="n"> </span><span class="s">#3C4150</span><span class="n">, </span><span class="s">#4084D6</span><span class="n">, </span><span class="s">#3C4150</span><span class="n">, </span><span class="s">#268bd2</span><span class="n">, </span><span class="s">#FFFFFF</span>
+<span class="k">rofi.color-active:</span><span class="n"> </span><span class="s">#393939</span><span class="n">, </span><span class="s">#268bd2</span><span class="n">, </span><span class="s">#393939</span><span class="n">, </span><span class="s">#268bd2</span><span class="n">, </span><span class="s">#205171</span>
+<span class="k">rofi.color-urgent:</span><span class="n"> </span><span class="s">#393939</span><span class="n">, </span><span class="s">#f3843d</span><span class="n">, </span><span class="s">#393939</span><span class="n">, </span><span class="s">#268bd2</span><span class="n">, </span><span class="s">#ffc39c</span>
+<span class="k">rofi.scrollbar-width:</span><span class="n"> </span><span class="mi">0</span>
+<span class="k">rofi.location:</span><span class="n"> </span><span class="mi">7</span>
+<span class="k">rofi.padding:</span><span class="n"> </span><span class="mi">2</span>
+<span class="k">rofi.width:</span><span class="n"> </span><span class="mi">25</span>
+<span class="k">rofi.yoffset:</span><span class="n"> </span><span class="mi">-25</span>
+<span class="k">rofi.lines:</span><span class="n"> </span><span class="mi">15</span>
+<span class="k">rofi.separator-style:</span><span class="n"> solid</span>
+<span class="k">rofi.scroll-method:</span><span class="n"> </span><span class="mi">1</span>
+</pre></div>
+</td></tr></table>
+                            </div>
+                            
+                            <div class="overlay">&nbsp;</div>
+                            
+                            <div class="minimize">
+                                <p>x</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="item file">
+                        <div class="header">
+                            
+                                <h4>.i3_config<span class="right">(<a href="/dots/1440/2/raw/">raw</a>, <a href="/dots/1440/2/dl/">dl</a>)</span></h4>
+                            
+                        </div>
+                        
+                        <div class="content">
+                            <div class="dot">
+                                <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+ 34
+ 35
+ 36
+ 37
+ 38
+ 39
+ 40
+ 41
+ 42
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48
+ 49
+ 50
+ 51
+ 52
+ 53
+ 54
+ 55
+ 56
+ 57
+ 58
+ 59
+ 60
+ 61
+ 62
+ 63
+ 64
+ 65
+ 66
+ 67
+ 68
+ 69
+ 70
+ 71
+ 72
+ 73
+ 74
+ 75
+ 76
+ 77
+ 78
+ 79
+ 80
+ 81
+ 82
+ 83
+ 84
+ 85
+ 86
+ 87
+ 88
+ 89
+ 90
+ 91
+ 92
+ 93
+ 94
+ 95
+ 96
+ 97
+ 98
+ 99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219</pre></div></td><td class="code"><div class="highlight"><pre><span class="c1"># This file has been auto-generated by i3-config-wizard(1).</span>
+<span class="c1"># It will not be overwritten, so edit it as you like.</span>
+<span class="c1">#</span>
+<span class="c1"># Should you change your keyboard layout some time, delete</span>
+<span class="c1"># this file and re-run i3-config-wizard(1).</span>
+<span class="c1">#</span>
+
+<span class="c1"># i3 config file (v4)</span>
+<span class="c1">#</span>
+<span class="c1"># Please see http://i3wm.org/docs/userguide.html for a complete reference!</span>
+
+<span class="k">set</span><span class="n"> </span><span class="o">$</span><span class="n">mod Mod4</span>
+
+<span class="c1"># Font for window titles. Will also be used by the bar unless a different font</span>
+<span class="c1"># is used in the bar {} block below.</span>
+<span class="c1"># This font is widely installed, provides lots of unicode glyphs, right-to-left</span>
+<span class="c1"># text rendering and scalability on retina/hidpi displays (thanks to pango).</span>
+<span class="k">font</span><span class="n"> pango</span><span class="o">:</span><span class="n">DejaVu Sans Mono </span><span class="mi">12</span>
+<span class="c1"># Before i3 v4.8, we used to recommend this one as the default:</span>
+<span class="c1"># font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1</span>
+<span class="c1"># The font above is very space-efficient, that is, it looks good, sharp and</span>
+<span class="c1"># clear in small sizes. However, its unicode glyph coverage is limited, the old</span>
+<span class="c1"># X core fonts rendering does not support right-to-left and this being a bitmap</span>
+<span class="c1"># font, it doesn‚Äôt scale on retina/hidpi displays.</span>
+
+<span class="c1"># set color variables</span>
+
+<span class="k">set</span><span class="n"> </span><span class="o">$</span><span class="n">bg-active		</span><span class="s">#4084D6</span>
+<span class="k">set</span><span class="n"> </span><span class="o">$</span><span class="n">bg-inactive	</span><span class="s">#4E5467</span>
+<span class="k">set</span><span class="n"> </span><span class="o">$</span><span class="n">bord-active	</span><span class="s">#4084D6</span>
+<span class="k">set</span><span class="n"> </span><span class="o">$</span><span class="n">bord-inactive	</span><span class="s">#3C4150</span>
+<span class="k">set</span><span class="n"> </span><span class="o">$</span><span class="n">text-active	</span><span class="s">#FFFFFF</span>
+<span class="k">set</span><span class="n"> </span><span class="o">$</span><span class="n">text-inactive	</span><span class="s">#4084D6</span>
+<span class="k">set</span><span class="n"> </span><span class="o">$</span><span class="n">bg-urgent		</span><span class="s">#f90707</span>
+
+<span class="c1"># set colors</span>
+<span class="c1"># class				border			background	text		indicator	child_border</span>
+<span class="k">client.focused</span><span class="n">			</span><span class="o">$</span><span class="n">bord-active		</span><span class="o">$</span><span class="n">bg-active	</span><span class="o">$</span><span class="n">text-active	</span><span class="o">$</span><span class="n">bord-active	</span><span class="o">$</span><span class="n">bg-active</span>
+<span class="k">client.focused_inactive</span><span class="n">		</span><span class="o">$</span><span class="n">bord-inactive		</span><span class="o">$</span><span class="n">bg-inactive	</span><span class="o">$</span><span class="n">text-inactive	</span><span class="o">$</span><span class="n">bord-inactive	</span><span class="o">$</span><span class="n">bg-inactive</span>
+<span class="k">client.unfocused</span><span class="n">		</span><span class="o">$</span><span class="n">bord-inactive		</span><span class="o">$</span><span class="n">bg-inactive	</span><span class="o">$</span><span class="n">text-inactive	</span><span class="o">$</span><span class="n">bord-inactive	</span><span class="o">$</span><span class="n">bg-inactive</span>
+<span class="k">client.urgent</span><span class="n">			</span><span class="o">$</span><span class="n">bord-active		</span><span class="o">$</span><span class="n">bg-urgent	</span><span class="o">$</span><span class="n">text-active	</span><span class="o">$</span><span class="n">bord-active	</span><span class="o">$</span><span class="n">bg-active</span>
+
+<span class="c1"># No borders</span>
+<span class="k">new_window</span><span class="n"> normal </span><span class="mi">0</span><span class="n"> px</span>
+<span class="k">new_float</span><span class="n"> normal </span><span class="mi">0</span><span class="n"> px</span>
+
+<span class="c1"># Use Mouse+$mod to drag floating windows to their wanted position</span>
+<span class="k">floating_modifier</span><span class="n"> </span><span class="o">$</span><span class="n">mod</span>
+
+<span class="c1"># start a terminal</span>
+<span class="k">bindsym</span><span class="n"> </span><span class="o">$</span><span class="n">mod</span><span class="o">+</span><span class="n">Return exec i3-sensible-terminal</span>
+
+<span class="c1"># kill focused window</span>
+<span class="k">bindsym</span><span class="n"> Mod1</span><span class="o">+</span><span class="n">Q kill</span>
+
+<span class="c1"># start dmenu --&gt; rofi</span>
+<span class="k">bindsym</span><span class="n"> </span><span class="o">$</span><span class="n">mod</span><span class="o">+</span><span class="n">d exec rofi </span><span class="nf">-show</span><span class="n"> run</span>
+<span class="c1"># There also is the (new) i3-dmenu-desktop which only displays applications</span>
+<span class="c1"># shipping a .desktop file. It is a wrapper around dmenu, so you need that</span>
+<span class="c1"># installed.</span>
+<span class="c1">#bindsym $mod+d exec --no-startup-id i3-dmenu-desktop</span>
+
+<span class="c1"># change focus</span>
+<span class="k">bindsym</span><span class="n"> </span><span class="o">$</span><span class="n">mod</span><span class="o">+</span><span class="n">j focus left</span>
+<span class="k">bindsym</span><span class="n"> </span><span class="o">$</span><span class="n">mod</span><span class="o">+</span><span class="n">k focus down</span>
+<span class="k">bindsym</span><span class="n"> </span><span class="o">$</span><span class="n">mod</span><span class="o">+</span><span class="n">l focus up</span>
+<span class="k">bindsym</span><span class="n"> </span><span class="o">$</span><span class="n">mod</span><span class="o">+</span><span class="n">m focus right</span>
+
+<span class="c1"># alternatively, you can use the cursor keys:</span>
+<span class="k">bindsym</span><span class="n"> </span><span class="o">$</span><span class="n">mod</span><span class="o">+</span><span class="n">Left focus left</span>
+<span class="k">bindsym</span><span class="n"> </span><span class="o">$</span><span class="n">mod</span><span class="o">+</span><span class="n">Down focus down</span>
+<span class="k">bindsym</span><span class="n"> </span><span class="o">$</span><span class="n">mod</span><span class="o">+</span><span class="n">Up focus up</span>
+<span class="k">bindsym</span><span class="n"> </span><span class="o">$</span><span class="n">mod</span><span class="o">+</span><span class="n">Right focus right</span>
+
+<span class="c1"># move focused window</span>
+<span class="k">bindsym</span><span class="n"> Mod1</span><span class="o">+</span><span class="n">j move left</span>
+<span class="k">bindsym</span><span class="n"> Mod1</span><span class="o">+</span><span class="n">k move down</span>
+<span class="k">bindsym</span><span class="n"> Mod1</span><span class="o">+</span><span class="n">l move up</span>
+<span class="k">bindsym</span><span class="n"> Mod1</span><span class="o">+</span><span class="n">M move right</span>
+
+<span class="c1"># alternatively, you can use the cursor keys:</span>
+<span class="k">bindsym</span><span class="n"> Mod1</span><span class="o">+</span><span class="n">Left move left</span>
+<span class="k">bindsym</span><span class="n"> Mod1</span><span class="o">+</span><span class="n">Down move down</span>
+<span class="k">bindsym</span><span class="n"> Mod1</span><span class="o">+</span><span class="n">Up move up</span>
+<span class="k">bindsym</span><span class="n"> Mod1</span><span class="o">+</span><span class="n">Right move right</span>
+
+<span class="c1"># split in horizontal orientation</span>
+<span class="k">bindsym</span><span class="n"> </span><span class="o">$</span><span class="n">mod</span><span class="o">+</span><span class="n">h split h</span>
+
+<span class="c1"># split in vertical orientation</span>
+<span class="k">bindsym</span><span class="n"> </span><span class="o">$</span><span class="n">mod</span><span class="o">+</span><span class="n">v split v</span>
+
+<span class="c1"># enter fullscreen mode for the focused container</span>
+<span class="k">bindsym</span><span class="n"> </span><span class="o">$</span><span class="n">mod</span><span class="o">+</span><span class="n">f fullscreen</span>
+
+<span class="c1"># change container layout (stacked, tabbed, toggle split)</span>
+<span class="k">bindsym</span><span class="n"> </span><span class="o">$</span><span class="n">mod</span><span class="o">+</span><span class="n">s layout stacking</span>
+<span class="k">bindsym</span><span class="n"> </span><span class="o">$</span><span class="n">mod</span><span class="o">+</span><span class="n">z layout tabbed</span>
+<span class="k">bindsym</span><span class="n"> </span><span class="o">$</span><span class="n">mod</span><span class="o">+</span><span class="n">t layout toggle split</span>
+
+<span class="c1"># toggle tiling / floating</span>
+<span class="k">bindsym</span><span class="n"> Mod1</span><span class="o">+</span><span class="n">space floating toggle</span>
+
+<span class="c1"># change focus between tiling / floating windows</span>
+<span class="k">bindsym</span><span class="n"> </span><span class="o">$</span><span class="n">mod</span><span class="o">+</span><span class="n">space focus mode_toggle</span>
+
+<span class="c1"># focus the parent container</span>
+<span class="k">bindsym</span><span class="n"> </span><span class="o">$</span><span class="n">mod</span><span class="o">+</span><span class="n">q focus parent</span>
+
+<span class="c1"># focus the child container</span>
+<span class="c1">#bindsym $mod+d focus child</span>
+
+<span class="c1"># set workspace variable</span>
+<span class="k">set</span><span class="n"> </span><span class="o">$</span><span class="n">workspace1 </span><span class="s">&quot;1: ÔÑ†&quot;</span>
+<span class="k">set</span><span class="n"> </span><span class="o">$</span><span class="n">workspace2 </span><span class="s">&quot;2: ÔÜº&quot;</span>
+<span class="k">set</span><span class="n"> </span><span class="o">$</span><span class="n">workspace3 </span><span class="s">&quot;3: Ôâ©&quot;</span>
+
+<span class="c1"># switch to workspace</span>
+<span class="k">bindsym</span><span class="n"> </span><span class="o">$</span><span class="n">mod</span><span class="o">+</span><span class="n">ampersand workspace </span><span class="o">$</span><span class="n">workspace1</span>
+<span class="k">bindsym</span><span class="n"> </span><span class="o">$</span><span class="n">mod</span><span class="o">+</span><span class="n">eacute workspace </span><span class="o">$</span><span class="n">workspace2</span>
+<span class="k">bindsym</span><span class="n"> </span><span class="o">$</span><span class="n">mod</span><span class="o">+</span><span class="n">quotedbl workspace </span><span class="o">$</span><span class="n">workspace3</span>
+<span class="k">bindsym</span><span class="n"> </span><span class="o">$</span><span class="n">mod</span><span class="o">+</span><span class="n">apostrophe workspace </span><span class="mi">4</span>
+<span class="k">bindsym</span><span class="n"> </span><span class="o">$</span><span class="n">mod</span><span class="o">+</span><span class="n">parenleft workspace </span><span class="mi">5</span>
+<span class="k">bindsym</span><span class="n"> </span><span class="o">$</span><span class="n">mod</span><span class="o">+</span><span class="n">section workspace </span><span class="mi">6</span>
+<span class="k">bindsym</span><span class="n"> </span><span class="o">$</span><span class="n">mod</span><span class="o">+</span><span class="n">egrave workspace </span><span class="mi">7</span>
+<span class="k">bindsym</span><span class="n"> </span><span class="o">$</span><span class="n">mod</span><span class="o">+</span><span class="n">exclam workspace </span><span class="mi">8</span>
+<span class="k">bindsym</span><span class="n"> </span><span class="o">$</span><span class="n">mod</span><span class="o">+</span><span class="n">ccedilla workspace </span><span class="mi">9</span>
+<span class="k">bindsym</span><span class="n"> </span><span class="o">$</span><span class="n">mod</span><span class="o">+</span><span class="n">agrave workspace </span><span class="mi">10</span>
+
+<span class="c1"># move focused container to workspace</span>
+<span class="k">bindsym</span><span class="n"> Mod1</span><span class="o">+</span><span class="n">1 move container to workspace </span><span class="o">$</span><span class="n">workspace1</span>
+<span class="k">bindsym</span><span class="n"> Mod1</span><span class="o">+</span><span class="n">eacute move container to workspace </span><span class="o">$</span><span class="n">workspace2</span>
+<span class="k">bindsym</span><span class="n"> Mod1</span><span class="o">+</span><span class="n">3 move container to workspace </span><span class="o">$</span><span class="n">workspace3</span>
+<span class="k">bindsym</span><span class="n"> Mod1</span><span class="o">+</span><span class="n">4 move container to workspace </span><span class="mi">4</span>
+<span class="k">bindsym</span><span class="n"> Mod1</span><span class="o">+</span><span class="n">5 move container to workspace </span><span class="mi">5</span>
+<span class="k">bindsym</span><span class="n"> Mod1</span><span class="o">+</span><span class="n">section move container to workspace </span><span class="mi">6</span>
+<span class="k">bindsym</span><span class="n"> Mod1</span><span class="o">+</span><span class="n">egrave move container to workspace </span><span class="mi">7</span>
+<span class="k">bindsym</span><span class="n"> Mod1</span><span class="o">+</span><span class="n">8 move container to workspace </span><span class="mi">8</span>
+<span class="k">bindsym</span><span class="n"> Mod1</span><span class="o">+</span><span class="n">ccedilla move container to workspace </span><span class="mi">9</span>
+<span class="k">bindsym</span><span class="n"> Mod1</span><span class="o">+</span><span class="n">agrave move container to workspace </span><span class="mi">10</span>
+
+<span class="c1"># workspaces on fixed monitor</span>
+<span class="k">workspace</span><span class="n"> </span><span class="o">$</span><span class="n">workspace1 output DP-1</span>
+<span class="k">workspace</span><span class="n"> </span><span class="o">$</span><span class="n">workspace2 output VGA-1</span>
+
+<span class="c1"># Media player controls</span>
+<span class="k">bindsym</span><span class="n"> XF86AudioPlay exec playerctl play-pause</span>
+<span class="k">bindsym</span><span class="n"> XF86AudioPause exec playerctl play-pause</span>
+<span class="k">bindsym</span><span class="n"> XF86AudioNext exec playerctl next</span>
+<span class="k">bindsym</span><span class="n"> XF86AudioPrev exec playerctl previous</span>
+
+<span class="c1"># Pulse Audio controls</span>
+<span class="k">bindsym</span><span class="n"> XF86AudioRaiseVolume exec </span><span class="nf">--no-startup-id</span><span class="n"> amixer set Master 2</span><span class="o">%+</span>
+<span class="k">bindsym</span><span class="n"> XF86AudioLowerVolume exec </span><span class="nf">--no-startup-id</span><span class="n"> amixer set Master 10</span><span class="o">%</span><span class="n">-</span>
+<span class="k">bindsym</span><span class="n"> XF86AudioMute exec </span><span class="nf">--no-startup-id</span><span class="n"> ~/mute.sh</span>
+
+<span class="c1"># Printscreen</span>
+<span class="k">bindsym</span><span class="n"> </span><span class="o">$</span><span class="n">mod</span><span class="o">+</span><span class="n">p exec gnome-screenshot </span><span class="nf">-d</span><span class="n"> </span><span class="mi">5</span>
+
+<span class="c1"># reload the configuration file</span>
+<span class="k">bindsym</span><span class="n"> Mod1</span><span class="o">+</span><span class="n">c reload</span>
+<span class="c1"># restart i3 inplace (preserves your layout/session, can be used to upgrade i3)</span>
+<span class="k">bindsym</span><span class="n"> Mod1</span><span class="o">+</span><span class="n">r restart</span>
+<span class="c1"># exit i3 (logs you out of your X session)</span>
+<span class="c1">#bindsym Mod1+e exec &quot;i3-nagbar -t warning -m &#39;You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.&#39; -b &#39;Yes, exit i3&#39; &#39;i3-msg exit&#39;&quot;</span>
+<span class="k">bindsym</span><span class="n"> Mod1</span><span class="o">+</span><span class="n">e exec ~/shutdown.sh</span>
+
+<span class="c1"># start file explorer</span>
+<span class="k">bindsym</span><span class="n"> </span><span class="o">$</span><span class="n">mod</span><span class="o">+</span><span class="n">e exec thunar</span>
+
+<span class="c1"># start firefox</span>
+<span class="k">bindsym</span><span class="n"> Mod1</span><span class="o">+</span><span class="n">f exec firefox-esr</span>
+
+<span class="c1"># resize window (you can also use the mouse for that)</span>
+<span class="k">mode</span><span class="n"> </span><span class="s">&quot;resize&quot;</span><span class="n"> </span><span class="o">{</span>
+<span class="n">        </span><span class="c1"># These bindings trigger as soon as you enter the resize mode</span>
+
+<span class="n">        </span><span class="c1"># Pressing left will shrink the window‚Äôs width.</span>
+<span class="n">        </span><span class="c1"># Pressing right will grow the window‚Äôs width.</span>
+<span class="n">        </span><span class="c1"># Pressing up will shrink the window‚Äôs height.</span>
+<span class="n">        </span><span class="c1"># Pressing down will grow the window‚Äôs height.</span>
+<span class="n">        bindsym j resize shrink width </span><span class="mi">10</span><span class="n"> px or </span><span class="mi">10</span><span class="n"> ppt</span>
+<span class="n">        bindsym k resize grow height </span><span class="mi">10</span><span class="n"> px or </span><span class="mi">10</span><span class="n"> ppt</span>
+<span class="n">        bindsym l resize shrink height </span><span class="mi">10</span><span class="n"> px or </span><span class="mi">10</span><span class="n"> ppt</span>
+<span class="n">        bindsym m resize grow width </span><span class="mi">10</span><span class="n"> px or </span><span class="mi">10</span><span class="n"> ppt</span>
+
+<span class="n">        </span><span class="c1"># same bindings, but for the arrow keys</span>
+<span class="n">        bindsym Left resize shrink width </span><span class="mi">10</span><span class="n"> px or </span><span class="mi">10</span><span class="n"> ppt</span>
+<span class="n">        bindsym Down resize grow height </span><span class="mi">10</span><span class="n"> px or </span><span class="mi">10</span><span class="n"> ppt</span>
+<span class="n">        bindsym Up resize shrink height </span><span class="mi">10</span><span class="n"> px or </span><span class="mi">10</span><span class="n"> ppt</span>
+<span class="n">        bindsym Right resize grow width </span><span class="mi">10</span><span class="n"> px or </span><span class="mi">10</span><span class="n"> ppt</span>
+
+<span class="n">        </span><span class="c1"># back to normal: Enter or Escape</span>
+<span class="n">        bindsym Return mode </span><span class="s">&quot;default&quot;</span>
+<span class="n">        bindsym Escape mode </span><span class="s">&quot;default&quot;</span>
+<span class="o">}</span>
+
+<span class="k">bindsym</span><span class="n"> </span><span class="o">$</span><span class="n">mod</span><span class="o">+</span><span class="n">r mode </span><span class="s">&quot;resize&quot;</span>
+
+<span class="c1"># Start i3bar to display a workspace bar (plus the system information i3status</span>
+<span class="c1"># finds out, if available)</span>
+<span class="k">bar</span><span class="n"> </span><span class="o">{</span>
+<span class="n">	colors </span><span class="o">{</span>
+<span class="n">		background	</span><span class="o">$</span><span class="n">bord-inactive</span>
+<span class="n">		</span>
+<span class="c1">#		class			border		background		text</span>
+<span class="n">		focused_workspace	</span><span class="o">$</span><span class="n">bord-active	</span><span class="o">$</span><span class="n">bg-inactive		</span><span class="o">$</span><span class="n">text-inactive</span>
+<span class="n">		active_workspace	</span><span class="o">$</span><span class="n">bg-inactive	</span><span class="o">$</span><span class="n">bg-inactive		</span><span class="o">$</span><span class="n">text-inactive</span>
+<span class="n">		inactive_workspace	</span><span class="o">$</span><span class="n">bg-inactive	</span><span class="o">$</span><span class="n">bg-inactive		</span><span class="o">$</span><span class="n">text-inactive</span>
+<span class="o">}</span>
+<span class="n">	tray_output DP-1</span>
+<span class="n">	status_command i3blocks</span>
+<span class="o">}</span>
+<span class="c1"># Background image</span>
+<span class="k">exec_always</span><span class="n"> </span><span class="nf">--no-startup-id</span><span class="n"> feh </span><span class="nf">--bg-scale</span><span class="n"> ~/Pictures/background.jpg</span>
+
+<span class="c1"># Adjust multiple monitor setup</span>
+<span class="k">exec_always</span><span class="n"> xrandr </span><span class="nf">--output</span><span class="n"> DP-1 primary</span>
+<span class="k">exec_always</span><span class="n"> xrandr </span><span class="nf">--output</span><span class="n"> DP-1 </span><span class="nf">--left-of</span><span class="n"> VGA-1</span>
+</pre></div>
+</td></tr></table>
+                            </div>
+                            
+                            <div class="overlay">&nbsp;</div>
+                            
+                            <div class="minimize">
+                                <p>x</p>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+        
+    
+
+    
+    
+    
+    
+    
+    
+
+    </div>
+    
+    <div id="footer">&nbsp;</div>
+</div>
+
+<div id="logo">
+    <a href="/"><img src="/public/images/logo.png" width="62" height="63" alt="DotShare.it"></a>
+</div>
+
+</body>
+</html>	œrÉÍL      Xü®ÜXü®à=m‚Í           :http://dotshare.it/dots/1440/ necko:classified 1 request-method GET response-head HTTP/1.1 200 OK
+Date: Sun, 12 Feb 2017 00:12:55 GMT
+Server: Apache/2.4.10 (Unix) PHP/5.5.21 mod_wsgi/4.4.5 Python/2.7.9
+Content-Length: 40709
+Content-Type: text/html; charset=utf-8
+ charset UTF-8 uncompressed-len 0 predictor::resource-count 5 predictor::http://dotshare.it/public/css/screen.css 1,1,1486858374,0 predictor::http://dotshare.it/public/css/colorbox.css 1,1,1486858374,0 predictor::http://dotshare.it/public/css/tipsy.css 1,1,1486858374,0 predictor::http://dotshare.it/public/images/logo.png 1,1,1486858374,0 predictor::http://dotshare.it/public/images/cup.png 1,1,1486858374,0   ü
