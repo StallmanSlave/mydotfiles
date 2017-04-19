@@ -2,6 +2,7 @@ set $mod Mod1
 
 # load compton
 exec --no-startup-id compton -f --vsync opengl --backend glx --paint-on-overlay
+exec_always --no-startup-id compton --opacity-rule '70:window_type = "dock" && class_g = "i3bar"'
 # font
 font pango: Monospace 7
 
@@ -18,7 +19,7 @@ bindsym $mod+k focus up
 bindsym $mod+l focus right
 
 # lock
-bindsym $mod+Shift+x exec i3lock --color 000000
+bindsym $mod+Shift+x exec i3lock --color 2f343f
 
 # move focused window
 bindsym $mod+Shift+h move left
@@ -49,16 +50,16 @@ bindsym Mod4+space focus mode_toggle
 # focus the parent container
 bindsym $mod+a focus parent
 
- set $workspace1 "1" 
- set $workspace2 "2"
- set $workspace3 "3"
- set $workspace4 "4"
- set $workspace5 "5"
- set $workspace6 "6"
- set $workspace7 "7"
- set $workspace8 "8"
- set $workspace9 "9"
- set $workspace10 "10"
+ set $workspace1 "一" 
+ set $workspace2 "二"
+ set $workspace3 "三"
+ set $workspace4 "四"
+ set $workspace5 "五"
+ set $workspace6 "六"
+ set $workspace7 "七"
+ set $workspace8 "八"
+ set $workspace9 "九"
+ set $workspace10 "十"
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $workspace1
@@ -91,8 +92,8 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # exit i3
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-
+bindsym $mod+Shift+e exec "i3-msg exit" #"i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+#bindsym $mod+Shift+e exec /home/joseph/.i3/scripts/exit_menu
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -101,7 +102,7 @@ mode "resize" {
     bindsym k resize shrink height 10 px or 10 ppt
     bindsym l resize grow width 10 px or 10 ppt
 
-    bindsym Lefj resize shrink width 10 px or 10 ppt
+    bindsym Left resize shrink width 10 px or 10 ppt
     bindsym Down resize grow height 10 px or 10 ppt
     bindsym Up resize shrink height 10 px or 10 ppt
     bindsym Right resize grow width 10 px or 10 ppt
@@ -119,6 +120,10 @@ set $text-color          #f3f4f5
 set $inactive-text-color #676E7D
 set $urgent-bg-color     #E53935
 
+#Resize i3-gaps
+#bindsym Mod4+s gaps inner current plus 5
+#bindsym Mod4+shift+s gaps inner current minus 5
+
 # window colors
 #                       border              background         text                 indicator
 client.focused          $bg-color           $bg-color          $text-color          #00ff00
@@ -129,7 +134,7 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 # bar
 bar {
         # font pongo: hack 8
-        # position top
+        position top
   	status_command i3blocks -c /home/joseph/.i3/i3blocks.conf
 	colors {
 		background $bg-color
@@ -169,6 +174,10 @@ bindsym $mod+Shift+s sticky toggle
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+bindsym Mod1+i exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
+bindsym Mod1+o exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym Mod1+u exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+
 # screen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20
@@ -193,17 +202,20 @@ bindsym Mod4+t exec cd /home/joseph/Downloads/tor/tor-browser_en-US && ./start-t
 bindsym Mod4+h exec cd /home/joseph/Downloads/tor/tor-browser-en-US-hardened/tor-browser && ./start-tor-browser.desktop --detach && exit
 # tor browser experimental
 bindsym Mod4+y exec cd /home/joseph/Downloads/tor/tor-browser-en-US-experimental/tor-browser_en-US && ./start-tor-browser.desktop --detach && exit
-
+# shutdown scripts
+bindsym Mod4+shift+p exec systemctl poweroff
+bindsym Mod4+shift+z exec shutdown -h now
+bindsym Mod1+shift+z exec shutdown -h now
 # startup
 # set Wallpaper
 # exec_always --no-startup-id feh --bg-scale /home/joseph/wallpaper/miku.jpg
 # set monitor
-exec_always --no-startup-id xrandr --output HDMI-0 --off --output DVI-I-1 --off --output DVI-I-0 --off --output DVI-I-3 --mode 1920x1080 --pos 0x0 --rotate normal --output DVI-I-2 --mode 1920x1080 --pos 1920x0 --rotate normal
+exec_always --no-startup-id xrandr --output HDMI-0 --off --output DVI-I-1 --off --output DVI-I-0 --off --output DVI-I-3 --mode 1366x768 --pos 0x0 --rotate normal --output DVI-I-2 --mode 1366x768 --pos 1366x0 --rotate normal
 # exec --no-startup-id spotify
 # exec --no-startup-id skype
-
 # Keys
 exec_always xmodmap -e "clear lock" #disable caps lock switch
 exec_always xmodmap -e "keysym Caps_Lock = Escape" #set caps_lock as escape
 
 # exec --no-startup-id compton -bf
+
