@@ -4,7 +4,7 @@ set $mod Mod1
 exec --no-startup-id compton -f --vsync opengl --backend glx --paint-on-overlay
 exec_always --no-startup-id compton --opacity-rule '70:window_type = "dock" && class_g = "i3bar"'
 # font
-font pango: Monospace 7
+font pango: Hack 6
 
 # thin borders
  hide_edge_borders both
@@ -18,14 +18,26 @@ bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
 
-# lock
-bindsym $mod+Shift+x exec i3lock --color 2f343f
 
+# Examples
+gaps inner 8 
+gaps outer 3
+#smart_gaps on
+#lock and shutdown
+bindsym $mod+x exec i3lock --color 202020
+bindsym $mod+Shift+x exec shutdown -h now
+# get rid of gaps
+bindsym $mod+Shift+d    gaps inner current set 0; gaps outer current set 0
+bindsym $mod+Shift+c    gaps inner current set 8; gaps outer current set 3
 # move focused window
 bindsym $mod+Shift+h move left
 bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
+#bindsym $mod+y move left 30
+#bindsym $mod+u move down 30
+#bindsym $mod+i move up 30
+#bindsym $mod+o move right 30
 
 # split in horizontal orientation
 bindsym $mod+b split h
@@ -61,18 +73,6 @@ bindsym $mod+a focus parent
  set $workspace9 "九"
  set $workspace10 "十"
 
-# move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace $workspace1
-bindsym $mod+Shift+2 move container to workspace $workspace2
-bindsym $mod+Shift+3 move container to workspace $workspace3
-bindsym $mod+Shift+4 move container to workspace $workspace4
-bindsym $mod+Shift+5 move container to workspace $workspace5
-bindsym $mod+Shift+6 move container to workspace $workspace6
-bindsym $mod+Shift+7 move container to workspace $workspace7
-bindsym $mod+Shift+8 move container to workspace $workspace8
-bindsym $mod+Shift+9 move container to workspace $workspace9
-bindsym $mod+Shift+0 move container to workspace $workspace10
-
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
 bindsym $mod+2 workspace $workspace2
@@ -85,8 +85,20 @@ bindsym $mod+8 workspace $workspace8
 bindsym $mod+9 workspace $workspace9
 bindsym $mod+0 workspace $workspace10
 
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace $workspace1
+bindsym $mod+Shift+2 move container to workspace $workspace2
+bindsym $mod+Shift+3 move container to workspace $workspace3
+bindsym $mod+Shift+4 move container to workspace $workspace4
+bindsym $mod+Shift+5 move container to workspace $workspace5
+bindsym $mod+Shift+6 move container to workspace $workspace6
+bindsym $mod+Shift+7 move container to workspace $workspace7
+bindsym $mod+Shift+8 move container to workspace $workspace8
+bindsym $mod+Shift+9 move container to workspace $workspace9
+bindsym $mod+Shift+0 move container to workspace $workspace10
+
 # reload the configuration file
-bindsym $mod+Shift+c reload
+#bindsym $mod+Shift+c reload
 
 # restart i3 inplace
 bindsym $mod+Shift+r restart
@@ -110,13 +122,37 @@ mode "resize" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
+# move
+bindsym $mod+m mode "move" focus floating
+mode "move"{
+bindsym	Left	move left
+bindsym	Right	move right
+bindsym	Up	move up
+bindsym	Down	move down
+bindsym	h	move left
+bindsym	j	move down
+bindsym	k	move up
+bindsym	l	move right
+
+bindsym	Return mode "default"
+bindsym	Escape mode "default"
+
+}
 
 # resize mode
 bindsym $mod+r mode "resize"
 
-set $bg-color 	         #2f343f
-set $inactive-bg-color   #2f343f
-set $text-color          #f3f4f5
+#some colors for thought
+#DEC VT100 light gray:     #dddddd
+#DEC VT100 light blue:     #99ddff
+#DEC VT100 white:          #ffffff
+#Green phosphor terminal:  #33ff66
+#Amber phosphor terminal:  #ffff33
+# white with hint of yellow: e8e9ca
+# the previous text color: f3f4f5
+set $bg-color 	         #181818
+set $inactive-bg-color   #181818
+set $text-color          #e8e9ca
 set $inactive-text-color #676E7D
 set $urgent-bg-color     #E53935
 
@@ -130,6 +166,9 @@ client.focused          $bg-color           $bg-color          $text-color      
 client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
 client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
 client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #333333
+
+# wimdow settings
+new_window none
 
 # bar
 bar {
@@ -174,9 +213,11 @@ bindsym $mod+Shift+s sticky toggle
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
-bindsym Mod1+i exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
-bindsym Mod1+o exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
-bindsym Mod1+u exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+#bindsym Mod1+i exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
+#bindsym Mod1+o exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+#bindsym Mod1+u exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+bindsym $mod+z          gaps outer current plus 2
+bindsym $mod+Shift+z    gaps outer current minus 2
 
 # screen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20
@@ -204,11 +245,11 @@ bindsym Mod4+h exec cd /home/joseph/Downloads/tor/tor-browser-en-US-hardened/tor
 bindsym Mod4+y exec cd /home/joseph/Downloads/tor/tor-browser-en-US-experimental/tor-browser_en-US && ./start-tor-browser.desktop --detach && exit
 # shutdown scripts
 bindsym Mod4+shift+p exec systemctl poweroff
-bindsym Mod4+shift+z exec shutdown -h now
-bindsym Mod1+shift+z exec shutdown -h now
+#bindsym Mod4+shift+z exec shutdown -h now
+#bindsym Mod1+shift+z exec shutdown -h now
 # startup
 # set Wallpaper
-# exec_always --no-startup-id feh --bg-scale /home/joseph/wallpaper/miku.jpg
+exec_always --no-startup-id feh --bg-scale /home/joseph/Pictures/gentoo-wallpapers/gentoo-lightdm.png
 # set monitor
 exec_always --no-startup-id xrandr --output HDMI-0 --off --output DVI-I-1 --off --output DVI-I-0 --off --output DVI-I-3 --mode 1366x768 --pos 0x0 --rotate normal --output DVI-I-2 --mode 1366x768 --pos 1366x0 --rotate normal
 # exec --no-startup-id spotify

@@ -1,11 +1,17 @@
 ﻿"""REMINDER read commnds for input :r , q <letter> to set macro , :! to use bash script
 "set IDE like functions 
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
 set nocompatible
 filetype plugin on
+set backspace=indent,eol,start
+
 " in-insertmode-remap this key for example  inoremap <Space><Space> <Esc>/<++><Enter>"_c4l
 autocmd FileType html  inoremap ?? <Esc>/<++><Enter>"_c4l
 autocmd FileType markdown  inoremap ?? <Esc>/<++><Enter>"_c4l
 autocmd FileType tex  inoremap ?? <Esc>/<++><Enter>"_c4l
+autocmd FileType python inoremap ?? <Esc>/<++><Enter>"_c4l
 inoremap ;gui <++>
 inoremap <C-l> <Esc>/<++><Enter>"_c41
 inoremap <C-j> <Esc>/<++><Enter>"_c41
@@ -16,6 +22,10 @@ inoremap <C-j> <Esc>/<++><Enter>"_c41
 "autocmd FileType html inoremap ;p <p></p><Space><Enter><Enter><++><Esc>2ki
 "autocmd FileType html inoremap ;i <em></em><Space><++><Esc>FeT>i
 """C-language
+autocmd FileType c inoremap ( ()<Esc>i
+autocmd FileType c inoremap { {}<Esc>i
+autocmd FileType c inoremap [ []<Esc>i
+autocmd FileType c inoremap " ""<Esc>i
 
 ""END
 """C++ language
@@ -23,10 +33,37 @@ inoremap <C-j> <Esc>/<++><Enter>"_c41
 ""END
 
 """Python 2.7 & 3
-
+autocmd FileType python inoremap ;pr print()<Enter><++><Esc>0k6li
+autocmd FileType python inoremap ;int int()<++><Esc>4hi
+autocmd FileType python inoremap ;str str()<++><Esc>4hi
+autocmd FileType python inoremap ( ()<Esc>i
+autocmd FileType python inoremap { {}<Esc>i
+autocmd FileType python inoremap [ []<Esc>i
+autocmd FileType python inoremap " ""<Esc>i
+autocmd FileType python inoremap ;inp input()<Enter><++><Esc>0k$i
+autocmd FileType python inoremap ;flo float()<++><Esc>4ha
+autocmd FileType python inoremap ;if if<Space><Space>:<Enter><Space><Space><Space><Space><++><Enter><++><Esc>02k3li
+autocmd FileType python inoremap ;else else:<Enter><Space><Space><Space><Space><Space><Enter><++><Esc>01k4li
+autocmd FileType python inoremap ;elif elif<Space><Space>:<Enter><Space><Space><Space><Space><++><Enter><++><Esc>02k4li
+autocmd FileType python inoremap ;while while<Space><Space>:<Enter><Space><Space><Space><Space><++><Enter><++><Esc>01k5li
+autocmd FileType python inoremap ;brk break
+autocmd FileType python inoremap ;cnt continue
+autocmd FileType python inoremap ;imp import<Space><Space>
+autocmd FileType python inoremap ;for for<Space><Space>:<Enter><Space><Space><Space><Space><++><Enter><++><Esc>02k4li
+autocmd FileType python inoremap ;syse sys.exit()
+autocmd Filetype python inoremap ;rng range()<Esc>hi
+autocmd Filetype python inoremap ;rintr random.randint(,)<Esc>2hi
+autocmd FileType python inoremap ;def def<Space><Space>:<Enter><Space><Space><Space><Space><++><Esc>0k4li
 """END
 
 """LATEX
+function! WC()
+	let filename = expand("%")
+	let cmd = "detex" . filename . " | wc -w | tr -d [:space:]"
+	let result = system(cmd)
+	echo result . "words"
+endfunction
+command WC call WC()
 autocmd FileType tex map <F7> :!bibtex<Space>%<Enter>
 autocmd FileType tex map <F5> :!pdflatex<Space>%<Enter>
 autocmd Filetype tex map <F8> :!latex<Space>%<Enter>
@@ -164,7 +201,6 @@ let g:lucius_termtrans=1
 "set termguicolors
 set background=dark
 "end gui settings
-syntax on
 syntax enable "enable syntax processing
 highlight ExtraWhitespace ctermbg=4
 match ExtraWhitespace /\s\+$/
